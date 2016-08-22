@@ -1,0 +1,906 @@
+<!doctype html>
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+
+	<title>Showbiz Pro Responsive Teaser JQuery Plugin - The Documentation</title>
+
+	<meta name="description" content="For support please checkout http://themepunch.ticksy.com !">
+	<meta name="author" content="ThemePunch">
+	<meta name="copyright" content="ThemePunch">
+	<meta name="generator" content="Documenter v1.6 http://rxa.li/documenter">
+	<meta name="date" content="2013-03-04T00:00:00+01:00">
+
+	<link rel="stylesheet" href="css/documenter_style.css" media="all">
+
+
+	<script src="js/jquery.1.6.4.js"></script>
+
+	<script src="js/jquery.scrollTo-1.4.2-min.js"></script>
+	<script src="js/jquery.easing.js"></script>
+
+	<link rel="stylesheet" href="css/shDocumenter.css" media="screen">
+	<script src="js/shCore.js"></script>
+	<script src="js/shBrushCss.js"></script>
+	<script src="js/shBrushXml.js"></script>
+	<script src="js/shBrushJScript.js"></script>
+	<script src="js/shBrushPlain.js"></script>
+	<script>SyntaxHighlighter.defaults['toolbar'] = false;SyntaxHighlighter.all();</script>
+
+	<script>document.createElement('section');var duration=913,easing='easeOutQuart';</script>
+	<script src="js/script.js"></script>
+
+	<style>
+		html{background-color:#A8A7A7;color:#363636;background-image:url(assets/images/image_1.gif);background-repeat:repeat;background-attachment:fixed;}
+		::-moz-selection{background:#404040;color:#B50D0D;}
+		::selection{background:#404040;color:#B50D0D;}
+		#documenter_sidebar #documenter_logo{background-image:url(assets/images/image_2.png);}
+		a{color:#830909;}
+		hr{border-top:1px solid #858484;border-bottom:1px solid #CFCDCD;}
+		#documenter_sidebar, #documenter_sidebar ol a{background-color:#363636;color:#A8A7A7;}
+		#documenter_sidebar ol a{-webkit-text-shadow:1px 1px 0px #575757;-moz-text-shadow:1px 1px 0px #575757;text-shadow:1px 1px 0px #575757;}
+		#documenter_sidebar ol{border-top:1px solid #242424;}
+		#documenter_sidebar ol a{border-top:1px solid #575757;border-bottom:1px solid #242424;color:#A8A7A7;}
+		#documenter_sidebar ol a:hover{background:#404040;color:#B50D0D;border-top:1px solid #404040;}
+		#documenter_sidebar ol a.current{background:#404040;color:#B50D0D;border-top:1px solid #404040;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+	</style>
+
+</head>
+<body>
+	<div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"></a>
+		<ol id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">Start</a></li>
+			<li><a href="#first_steps">First Steps</a></li>
+			<li><a href="#options">Options</a></li>
+			<li><a href="#skins">Skins</a></li>
+			<li><a href="#markups_overview">Markups Overview</a></li>
+			<li><a href="#classes_overview">Classes Overview</a></li>
+			<li><a href="#fancybox">FancyBox</a></li>
+			<li><a href="#methodes">Methodes</a></li>
+			<li><a href="#licenses">Licenses</a></li>
+			<li><a href="#support">Support</a></li>
+
+		</ol>
+		<div id="documenter_copyright">Copyright ThemePunch 2013<br>
+		made with the <a href="http://rxa.li/documenter">Documenter v1.6</a>
+		</div>
+	</div>
+	<div id="documenter_content">
+	<section id="documenter_cover"><h1>Showbiz Pro Responsive Teaser JQuery Plugin</h1><h2>The Documentation</h2><hr><ul><li>Created: 03/04/2013</li><li>latest Update: 19/08/2013</li><li>By: ThemePunch</li><li><a href="http://www.codecanyon.com/user/themepunch?ref=themepunch">www.codecanyon.com/user/themepunch</a></li><li>Email: <a href="mailto:&#105;&#110;&#102;&#111;&#64;&#116;&#104;&#101;&#109;&#101;&#112;&#117;&#110;&#99;&#104;&#46;&#99;&#111;&#109;">&#105;&#110;&#102;&#111;&#64;&#116;&#104;&#101;&#109;&#101;&#112;&#117;&#110;&#99;&#104;&#46;&#99;&#111;&#109;</a></li></ul><p>For support please checkout http://themepunch.ticksy.com !</p></section><section id="first_steps">
+	<h3>First Steps</h3><hr class="notop">
+<p>
+	This chapter will give you general instructions on how to install the Showbiz Pro Responsive Teaser JQuery Plugin and setup the options. Later chapters will be more detailed if needed.</p>
+<h4>
+	00 What files do I need to upload to my server?</h4>
+<p>
+	Please upload the <strong>showbizpro</strong> folder to your server. In this folder you will find the following subfolders containing all of the items content:</p>
+<ul>
+	<li>
+		js</li>
+	<li>
+		css</li>
+	<li>
+		assets</li>
+	<li>
+		fancybox</li>
+</ul>
+<p>
+	You could use your own jQuery but we recommend loading it directly from the Google ressources (see later in this documentation).</p>
+<p>
+	You will find some&nbsp;<strong>example</strong> <strong>html files</strong>&nbsp;in your downloaded zip.&nbsp;</p>
+<h4>
+	&nbsp;</h4>
+<h4>
+	01 Implement the jQuery</h4>
+<p>
+	Add the following lines to your HTML Head:&nbsp;</p>
+<pre class="brush: js">
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js" /&gt;</pre>
+<h4>
+	&nbsp;</h4>
+<h4>
+	02 Add ShowBiz and Fancybox &nbsp;files to your HTML page &nbsp;</h4>
+<div>
+	Some part comes also in the <strong>&nbsp;&lt;head&gt;</strong> section (After the jQuery Library link !!)</div>
+<div>
+	<pre class="brush: html">
+
+&lt;!-- THE SHOWBIZ STLYES --&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;showbizpro/css/settings.css&quot; media=&quot;screen&quot; /&gt;
+
+
+&lt;!-- THE FANYCYBOX ASSETS --&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;showbizpro/fancybox/jquery.fancybox.css?v=2.1.3&quot; type=&quot;text/css&quot; media=&quot;screen&quot; /&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;showbizpro/fancybox/jquery.fancybox.pack.js?v=2.1.3&quot;&gt;&lt;/script&gt;</pre>
+	<div>
+		&nbsp;</div>
+	<div>
+		The Rest comes in the <strong>&lt;body&gt;</strong> section at the end of the DOM before the plugin &nbsp;is initialised.&nbsp;</div>
+</div>
+<div>
+	<h4>
+		&nbsp;</h4>
+	<pre class="brush: html">
+
+&lt;!-- THE SHOWBIZ JS FILES  --&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;showbizpro/js/jquery.themepunch.tools.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;showbizpro/js/jquery.themepunch.showbizpro.js&quot;&gt;&lt;/script&gt;
+
+</pre>
+	<h4>
+		&nbsp;</h4>
+	<h4>
+		03 Create the surrounding DIV for your ShowBiz Container</h4>
+	<div>
+		Put it in the HTML:</div>
+	<pre class="brush: html">
+<span style="font-family: Arial, Verdana, sans-serif;">&lt;!-- DEMO I. --&gt;</span>
+&lt;div id=&quot;example1&quot; class=&quot;showbiz-container&quot;&gt;
+  &lt;!-- THE NAVIGATION --&gt;
+  &lt;div class=&quot;showbiz-navigation center sb-nav-grey&quot;&gt;
+    &lt;div id=&quot;showbiz_left_1&quot; class=&quot;sb-navigation-left&quot;&gt;
+              &lt;i class=&quot;icon-left-open&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;showbiz_right_1&quot; class=&quot;sb-navigation-right&quot;&gt;
+              &lt;i class=&quot;icon-right-open&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;sbclear&quot;&gt;&lt;/div&gt;
+  <span style="font-family: Arial, Verdana, sans-serif;">&lt;/div&gt; &lt;!-- END OF THE NAVIGATION --&gt;</span>
+
+
+<span style="font-family: Arial, Verdana, sans-serif;">     &lt;!--</span><span class="Apple-tab-span" style="font-family: Arial, Verdana, sans-serif;"> </span><span style="font-family: Arial, Verdana, sans-serif;">THE PORTFOLIO ENTRIES</span><span class="Apple-tab-span" style="font-family: Arial, Verdana, sans-serif;"> </span><span style="font-family: Arial, Verdana, sans-serif;">--&gt;</span>
+  &lt;div class=&quot;<strong>showbiz</strong>&quot; data-left=&quot;#showbiz_left_1&quot; data-right=&quot;#showbiz_right_1&quot;&gt;
+
+     &lt;!-- THE OVERFLOW HOLDER CONTAINER, DONT REMOVE IT !! --&gt;
+     &lt;div class=&quot;overflowholder&quot;&gt;
+          &lt;!-- LIST OF THE ENTRIES --&gt;
+          &lt;ul&gt;
+            ....
+         &lt;/ul&gt;
+      &lt;/div&gt; &lt;!-- END OF OVERFLOW HOLDER --&gt;
+   &lt;/div&gt;&lt;!-- END OF SHOWBIZ INNER CONTAINER --&gt;
+&lt;/div&gt;&lt;!-- END OF SHOWBIZ CONTAINER--&gt;</pre>
+	<p class="info">
+		The Wrapping Container Names can be different.&nbsp; It is only important that the reference in the Plugin initialisation points to this div (in example named showbiz-container).&nbsp;</p>
+	<p class="info">
+		The Inner Container names must keep their class like <strong>overflowholder</strong> and <strong>showbiz</strong></p>
+	<div>
+		<h4>
+			&nbsp;</h4>
+		<h4>
+			04 The CSS Settings for the Showbiz-Container</h4>
+		<div>
+			Put it in one of your StyleSheets (This is only an example, you can style your container as you wish)</div>
+		<div>
+			&nbsp;</div>
+		<div>
+			<pre class="brush: css">
+<span style="font-family: Arial, Verdana, sans-serif;">.showbiz-container</span><span class="Apple-tab-span" style="font-family: Arial, Verdana, sans-serif;"> </span><span style="font-family: Arial, Verdana, sans-serif;">{</span><span class="Apple-tab-span" style="font-family: Arial, Verdana, sans-serif;"> </span><span style="font-family: Arial, Verdana, sans-serif;">max-width:1210px; min-width:300px; overflow:hidden;</span>
+                padding:0px 20px;margin:0px auto 50px;
+                box-sizing:border-box;
+               -moz-box-sizing:border-box;
+               -webkit-box-sizing:border-box;
+}</pre>
+		</div>
+	</div>
+	<div>
+		<h4>
+			&nbsp;</h4>
+		<h4>
+			05 The first Teaser Entries&nbsp;</h4>
+		<p>
+			Simple Entries. ( Filters, Contents, Captions etc. are shown in later examples)</p>
+		<pre class="brush: html">
+<span style="font-family: Arial, Verdana, sans-serif;">&lt;!-- AN ENTRY HERE , WITH PREDEFINED GREY SKIN--&gt;</span>
+&lt;li class=&quot;sb-grey-skin&quot;&gt;
+  &lt;!-- THE MEDIAHOLDER CONTAINER --&gt;
+  &lt;div class=&quot;mediaholder&quot;&gt;
+     &lt;!-- THE INNER WRAP FOR MEDIA HOLDER --&gt;
+     &lt;div class=&quot;mediaholder_innerwrap&quot;&gt;
+         &lt;img alt=&quot;&quot; src=&quot;images/entries/image.jpg&quot;&gt;
+         &lt;!-- THE HOVER CONTAINER AND THE HOVER ICONS --&gt;
+         &lt;div class=&quot;hovercover&quot; &gt;
+               &lt;a href=&quot;#&quot;&gt;
+                   &lt;div class=&quot;linkicon notalone&quot;&gt;&lt;i class=&quot;icon-link&quot;&gt;&lt;/i&gt;&lt;/div&gt;
+               &lt;/a&gt;
+               &lt;a class=&quot;fancybox&quot; rel=&quot;group&quot; href=&quot;images/entries/image.jpg&quot;&gt;
+                   &lt;div class=&quot;lupeicon notalone&quot;&gt;&lt;i class=&quot;icon-search&quot;&gt;&lt;/i&gt;&lt;/div&gt;
+               &lt;/a&gt;
+         &lt;/div&gt;&lt;!-- END OF HOVER CONTIANER --&gt;
+     &lt;/div&gt;&lt;!-- END OF MEDIAHOLDER INNER WRAP--&gt;
+   &lt;/div&gt;&lt;!-- END OF MEDIAHOLDER CONTAINER --&gt;
+
+    &lt;!-- THE VISIBLE DETAILS --&gt;
+    &lt;div class=&quot;detailholder&quot;&gt;
+        &lt;div class=&quot;divide15&quot;&gt;&lt;/div&gt;
+        &lt;h4 class=&quot;showbiz-title txt-center&quot;&gt;&lt;a href=&quot;#&quot;&gt;Teaser Item One&lt;/a&gt;&lt;/h4&gt;
+        &lt;div class=&quot;divide5&quot;&gt;&lt;/div&gt;
+        &lt;p class=&quot;txt-center&quot;&gt;Lorem ipsum dolor sit amet, consetetur sadipscin&lt;/p&gt;
+    &lt;/div&gt;&lt;!-- END OF VISIBLE DETAILS --&gt;
+&lt;/li&gt;&lt;!-- END OF ENTRY --&gt;</pre>
+		<p class="warning">
+			li can have different Styles per one Teaser Rotator. We have predefined Styles, but unlimited own style can be created with simple css settings</p>
+		<p class="warning">
+			Some Helper classes and container can be used like mediaholder, hovercover, detailholder, reveal_container etc. See Helper Classes and Container later in Documentation</p>
+		<p class="info">
+			Use Font Face Icons instead of PNG Files for Hover effets, It makes your item Retina Ready, and lightweight&nbsp;</p>
+		<h4>
+			&nbsp;</h4>
+		<h4>
+			06 Call the jQuery Plugin to build the Gallery</h4>
+		<p>
+			Put it in end of your HTML Document in the &lt;body&gt; section. After the Script Loading Section.</p>
+		<pre class="brush: js">
+&lt;script type=&quot;text/javascript&quot;&gt;
+    jQuery(document).ready(function() {
+          jQuery(&#39;#example1&#39;).showbizpro({
+              dragAndScroll:&quot;off&quot;,
+              carousel:&quot;off&quot;,
+              allEntryAtOnce:&quot;off&quot;,
+              visibleElementsArray:[4,3,2,1],
+              mediaMaxHeight:[0,0,0,0],
+              entrySizeOffset:0
+          })
+       })
+&lt;/script&gt;
+</pre>
+	</div>
+</div>
+<p>
+	&nbsp;</p>
+</section>
+<section id="options">
+	<h3>Options</h3><hr class="notop">
+<p>
+	This Chapter is all about the Options. Via the Plugin Options you can change the navigation types,amount of visible items per screen size, &nbsp;max height of media elements, markup default, drag and scroll functions.</p>
+<h4>
+	&nbsp;</h4>
+<h4>
+	01. How to add Options to the Plugin</h4>
+<p>
+	The Options are defined in the Plugin Activation section in the HTML Document. (the shown values are Default !)</p>
+<p class="brush: html">
+	&nbsp;</p>
+<div>
+	<pre class="brush: js">
+&lt;script type=&quot;text/javascript&quot;&gt;
+jQuery(document).ready(function() {
+          jQuery(&#39;#example1&#39;).showbizpro({
+                entrySizeOffset:0,
+                containerOffsetRight:0,
+                heightOffsetBottom:0,
+                carousel:&quot;off&quot;,
+                visibleElementsArray:[4,3,2,1],
+                mediaMaxHeight:[0,0,0,0],
+                ytMarkup:&quot;&lt;iframe src=&#39;http://www.youtube.com/embed/%%videoid%%?hd=1&amp;amp;wmode=opaque&amp;amp;autohide=1&amp;amp;showinfo=0&amp;amp;autoplay=1&#39;&gt;&lt;/iframe&gt;&quot;,
+                vimeoMarkup:&quot;&lt;iframe src=&#39;http://player.vimeo.com/video/29298709?title=0&amp;amp;byline=0&amp;amp;portrait=0;api=1&amp;amp;autoplay=1&#39;&gt;&lt;/iframe&gt;&quot;,
+                closeOtherOverlays:&quot;off&quot;,
+                allEntryAtOnce:&quot;off&quot;,
+                dragAndScroll:&quot;off&quot;,
+                easeing:'Power3.easeOut'
+    });
+   });
+&lt;/script&gt;</pre>
+</div>
+<div>
+	<p class="brush: html">
+		&nbsp;</p>
+</div>
+<h4>
+	02. The Options</h4>
+<p>
+	<strong>visibleElementsArray:[4,3,2,1] </strong>- Defines how many Entry is visible in the different Responsive levels. The Reponsive &nbsp;levels (4 level!) are the following (<strong>the size of the Surrounding container and not the Browser !!!!</strong>) :</p>
+<ul>
+	<li>
+		&gt;980px</li>
+	<li>
+		768px-980px</li>
+	<li>
+		420px - 768px</li>
+	<li>
+		&lt;420px</li>
+</ul>
+<p>
+	If you set it to i.e. [5,3,2,1] &nbsp;than over 980px you will see 5 entreis, between 768px and 980px you will see 3 entries, between 420px and 768px 2 Entries and under 420px you will see 1 Entry. Default value: [4,3,2,1]</p>
+<p>
+	<strong>mediaMaxHeight: [0,0,0,0] -</strong> Defines how height the mediaholder_innerwrap&nbsp;container can have depending on the Responsive levels.The Reponsive &nbsp;levels (4 level!) are the following (the size of the Surrounding container and not the Browser !!!!) :</p>
+<ul>
+	<li>
+		&gt;980px</li>
+	<li>
+		768px-980px</li>
+	<li>
+		420px - 768px</li>
+	<li>
+		&lt;420px</li>
+</ul>
+<p>
+	0 means no Limit ! i.e. [320,200,160,120] will set the max-height to 320px , 200px, 160px or to 120px depending on the surrounding container width. &nbsp;Default value is [0,0,0,0]</p>
+<p>
+	<strong>closeOtherOverlays:on/off </strong>- if this set to &quot;on&quot; than clickin a Reveal_opener button will close first all other opened Reveal within the same Teaser and open the clicked one. default value is &quot;off&quot;</p>
+<p>
+	<strong>allEntryAtOnce:on/off</strong> - it is set to &quot;on&quot; than by clicking left/right the slider with the current visible amount of entries will be slide to the left/right. Default value is &quot;off&quot;</p>
+<p>
+	<strong>carousel: on/off</strong> - Allows an endless slide through the entries. If it is set to off the left and right scroll is limited and reaching the last item / first item the scroll is blocked.&nbsp;</p>
+<p>
+	<strong>dragAndScroll: on/off</strong> - If it is set to&quot;on&quot;, than the full markup can be draged and scroller by holding the container with the mouse. &nbsp;Do not use Drag6Scroll together with Normal Navigation !! Default value is &quot;off&quot;</p>
+<p>
+	<strong>heightOffsetBottom</strong>: Increase/decrease the height of the container (padding-bottom). Use it in case you add shadows / borders to entries. The overflow container padding can be adjusted with this value to be able to see the shadows on entries. default value is 0.</p>
+<p>
+	<strong>entrySizeOffset:</strong>&nbsp;reduce the width per entries. Dont need to adjust till entries fits always wll within the container. Default Value is 0</p>
+<p>
+	<b>conteainerOffsetRight: </b>create a right padding and reduce the &lt;li&gt; tag widths. Dont need to change till entries fits well in the surrounding container. Default value is 0</p>
+<p>
+	&nbsp;</p>
+<div>
+	<strong>ytMarkup</strong>:&quot;&lt;iframe src=&#39;http://www.youtube.com/embed/%%videoid%%?hd=1&amp;amp;wmode=opaque&amp;amp;autohide=1&amp;amp;showinfo=0&amp;amp;autoplay=1&#39;&gt;&lt;/iframe&gt;&quot; - a Default Frame to build the video item inside the Reveal_Wrapper. %%video%% will be changed via the data-video settings.</div>
+<div>
+	&nbsp;</div>
+<div>
+	<strong>vimeoMarkup</strong>:&quot;&lt;iframe src=&#39;http://player.vimeo.com/video/29298709?title=0&amp;amp;byline=0&amp;amp;portrait=0;api=1&amp;amp;autoplay=1&#39;&gt;&lt;/iframe&gt;&quot; -&nbsp;- a Default Frame to build the video item inside the Reveal_Wrapper. %%video%% will be changed via the data-video settings.</div>
+<div>
+	&nbsp;</div>
+<div>
+	<strong>easing:</strong><br>
+			<div><strong>New Easings:</strong>Linear.easeNone
+Power0.easeIn  (linear),
+Power0.easeInOut  (linear),
+Power0.easeOut  (linear),
+Power1.easeIn,
+Power1.easeInOut,
+Power1.easeOut,
+Power2.easeIn,
+Power2.easeInOut,
+Power2.easeOut,
+Power3.easeIn,
+Power3.easeInOut,
+Power3.easeOut,
+Power4.easeIn,
+Power4.easeInOut,
+Power4.easeOut,
+Quad.easeIn  (same as Power1.easeIn),
+Quad.easeInOut  (same as Power1.easeInOut),
+Quad.easeOut  (same as Power1.easeOut),
+Cubic.easeIn  (same as Power2.easeIn),
+Cubic.easeInOut  (same as Power2.easeInOut),
+Cubic.easeOut  (same as Power2.easeOut),
+Quart.easeIn  (same as Power3.easeIn),
+Quart.easeInOut  (same as Power3.easeInOut),
+Quart.easeOut  (same as Power3.easeOut),
+Quint.easeIn  (same as Power4.easeIn),
+Quint.easeInOut  (same as Power4.easeInOut),
+Quint.easeOut  (same as Power4.easeOut),
+Strong.easeIn  (same as Power4.easeIn),
+Strong.easeInOut  (same as Power4.easeInOut),
+Strong.easeOut  (same as Power4.easeOut),
+Back.easeIn,
+Back.easeInOut,
+Back.easeOut,
+Bounce.easeIn,
+Bounce.easeInOut,
+Bounce.easeOut,
+Circ.easeIn,
+Circ.easeInOut,
+Circ.easeOut,
+Elastic.easeIn,
+Elastic.easeInOut,
+Elastic.easeOut,
+Expo.easeIn,
+Expo.easeInOut,
+Expo.easeOut,
+Sine.easeIn,
+Sine.easeInOut,
+Sine.easeOut,
+SlowMo.ease</div><br>
+			<div><strong>Old Easings:</strong>
+				easeOutBack, easeInQuad, easeOutQuad, easeInOutQuad, easeInCubic, easeOutCubic</div>
+			<div>
+				easeInOutCubic, easeInQuart, easeOutQuart, easeInOutQuart, easeInQuint</div>
+			<div>
+				easeOutQuint, easeInOutQuint, easeInSine, easeOutSine, easeInOutSine</div>
+			<div>
+				easeInExpo, easeOutExpo, easeInOutExpo, easeInCirc, easeOutCirc, easeInOutCirc</div>
+			<div>
+				easeInElastic, easeOutElastic, easeInOutElastic, easeInBack, easeOutBack, easeInOutBack</div>
+			<div>
+				easeInBounce, easeOutBounce, easeInOutBounce<br>
+				&nbsp;</div>
+		</li>
+</section>
+<section id="skins">
+	<h3>Skins</h3><hr class="notop">
+<p>
+	This Chapter presents the Predfefined Skins. &nbsp;</p>
+<p>
+	An Entry can include any kind of Content. To make it easier for you we created some Predefined Skins which help you to make some basic styling for your Entries. &nbsp;</p>
+<p class="info">
+	You can mix Skins and containers in any art of way within one Teaser</p>
+<p class="info">
+	Skins are Optional. You can craete your own content within an &lt;li&gt; tag with any content you wish</p>
+<h4>
+	00 The Skins</h4>
+<p>
+	The Skins are a collection of CSS Settings used within a &lt;li&gt; tag (an entry). As far a skin defines looks of titles, content, paddings, sapeces, colors and bg colors. You can add unlimited amount of further skins to your collection. And you can use different skins per entry within the same teaser also.</p>
+<p>
+	Best way to link a skin to an entry to set the class for the &lt;li&gt; tag.</p>
+<div>
+	<pre class="brush: html">
+
+&lt;!-- AN ENTRY HERE --&gt;
+<span style="font-family: Arial, Verdana, sans-serif;">&lt;li class=&quot;sb-media-skin&quot;&gt;
+
+</span></pre>
+</div>
+<p>
+	We have 4 predefined Skin.</p>
+<ul>
+	<li>
+		sb-light-skin,</li>
+	<li>
+		sb-media-skin,</li>
+	<li>
+		sb-showcase-skin</li>
+	<li>
+		sb-grey-skin</li>
+</ul>
+</section>
+<section id="markups_overview">
+	<h3>Markups Overview</h3><hr class="notop">
+<p>
+	This Chapter presents the Predfefined &nbsp;Markups. &nbsp;</p>
+<p>
+	An Entry can include any kind of Content. To make it easier for you we created some containers which help you to build Reveals, Media and Content in your Teaser Entry.</p>
+<p class="info">
+	You can mix the Containers in any art of way.&nbsp;</p>
+<p class="info">
+	Predefined Containers &nbsp;are Optional. You can craete your own content within an &nbsp;&lt;li&gt; tag with any content you wish</p>
+<h4>
+	00 The Predefined Containers</h4>
+<p>
+	We have a collection of predefined containers, which will help you to make simple hover effects, handle Media, add Reveals (hidden Contents) and add captions / content.</p>
+<p>
+	The Predefined Containers:</p>
+<ul>
+	<li>
+		mediaholder &amp; mediaholder_innerwrap</li>
+	<li>
+		hovercover, linkicon &amp; lupeicon</li>
+	<li>
+		detailholder</li>
+	<li>
+		showbiz-navigation</li>
+	<li>
+		reveal_container &amp; reveal_wrapper, heightadjuster &amp; table</li>
+	<li>
+		reveal_opener</li>
+	<li>
+		sb-vimeo-markup, sb-yt-markup</li>
+</ul>
+<p>
+	&nbsp;</p>
+<h4>
+	01 The Mediaholder</h4>
+<p>
+	This Container helps you to add a Media within the Teaser (like an image). Depending on the Skins you will see how to add Border, rounded border and max height for the media you included.</p>
+<p>
+	&nbsp;</p>
+<pre class="brush: html">
+&lt;!-- THE MEDIA HOLDER HERE --&gt;
+    &lt;div class=&quot;mediaholder &quot;&gt;
+        &lt;div class=&quot;mediaholder_innerwrap&quot;&gt;
+            &lt;img alt=&quot;&quot; src=&quot;images/entries/Fotolia_261640_XS.jpg&quot;&gt;
+        &lt;/div&gt;
+     &lt;/div&gt;&lt;!-- END OF MEDIA CONTAINER --&gt;</pre>
+<p>
+	&nbsp;</p>
+<h4>
+	01/B The Mediaholder with Lazy Loading</h4>
+<p>
+	This Container helps you to add a Media within the Teaser (like an image). Depending on the Skins you will see how to add Border, rounded border and max height for the media you included.</p>
+<p>
+	&nbsp;</p>
+<pre class="brush: html">
+&lt;!-- THE MEDIA HOLDER HERE --&gt;
+    &lt;div class=&quot;mediaholder &quot;&gt;
+        &lt;div class=&quot;mediaholder_innerwrap&quot;&gt;
+            &lt;img alt=&quot;&quot; data-lazyloadheight="200" data-lazyloadsrc=&quot;images/entries/Fotolia_261640_XS.jpg&quot; src=&quot;images/entries/empty.png&quot;&gt;
+        &lt;/div&gt;
+     &lt;/div&gt;&lt;!-- END OF MEDIA CONTAINER --&gt;</pre>
+<p>The data-lazyloadsrc should point on the Image source. The data-lazyloadheight should be the height of the container before loading the image, and the src should point on any placeholder image. Best if you  use for all Items the same placeholder image for quicker loading.</p>
+<p>Showbiz adds an item during the loadsequenze with the class sb-preloader which creates a loader circle in the mediaholder folder. This will be removed automatically after the image is loaded. You can style this loader in the settings.css file or copying that class into your own stylesheer and edit it there, for better Update possibilities in the future.
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<h4>
+	02 Hovercover and Icons</h4>
+<p>
+	The Hovercover Container usually comes within the mediaholder container to add some hover effect to the Teaser item. It can have a simple colored bg, or cn include some hovering icons like a link and/or lupe icon</p>
+<p>
+	Here a full functionable Example within a MediaHolder container:</p>
+<p>
+	&nbsp;</p>
+<pre class="brush: html">
+&lt;!-- THE MEDIAHOLDER CONTAINER --&gt;
+&lt;div class=&quot;mediaholder&quot;&gt;
+    &lt;!-- THE INNER WRAP FOR MEDIA HOLDER --&gt;
+    &lt;div class=&quot;mediaholder_innerwrap&quot;&gt;
+        &lt;img alt=&quot;&quot; src=&quot;images/entries/image.jpg&quot;&gt;
+
+        &lt;!-- THE HOVER CONTAINER AND THE HOVER ICONS --&gt;
+        &lt;div class=&quot;hovercover&quot; &gt;
+              &lt;a href=&quot;#&quot;&gt;
+                 &lt;div class=&quot;linkicon notalone&quot;&gt;&lt;i class=&quot;icon-link&quot;&gt;&lt;/i&gt;&lt;/div&gt;
+              &lt;/a&gt;
+
+              &lt;a class=&quot;fancybox&quot; rel=&quot;group&quot; href=&quot;images/entries/image.jpg&quot;&gt;
+                      &lt;div class=&quot;lupeicon notalone&quot;&gt;&lt;i class=&quot;icon-search&quot;&gt;&lt;/i&gt;&lt;/div&gt;
+              &lt;/a&gt;
+         &lt;/div&gt;&lt;!-- END OF HOVER CONTIANER --&gt;
+     &lt;/div&gt;&lt;!-- END OF MEDIAHOLDER INNER WRAP--&gt;
+&lt;/div&gt;&lt;!-- END OF MEDIAHOLDER CONTAINER --&gt;
+
+</pre>
+<p>
+	&nbsp;</p>
+<p class="warning">
+	Note, the notalone class helps you to add two icon next to each other. &nbsp;Without notalon using two icon within one hovercover will overlay the icons.</p>
+<pre class="brush: plain">
+
+</pre>
+<h4>
+	03 Detailholder</h4>
+<p>
+	The Detail Holder is a container to collect titless, content, dates etc. within one contaier, and position it relative or absolute to the rest of the containers. It helps you to add bg color to the content, add border radius and borders, paddings. &nbsp;it is not a must ! I can be used if you need so.</p>
+<p>
+	&nbsp;</p>
+<pre class="brush: html">
+&lt;!-- THE VISIBLE DETAILS --&gt;
+&lt;div class=&quot;detailholder&quot;&gt;
+    &lt;div class=&quot;divide15&quot;&gt;&lt;/div&gt;
+    &lt;h4 class=&quot;showbiz-title txt-center&quot;&gt;&lt;a href=&quot;#&quot;&gt;Teaser Item One&lt;/a&gt;&lt;/h4&gt;
+    &lt;div class=&quot;divide5&quot;&gt;&lt;/div&gt;
+    &lt;p class=&quot;txt-center&quot;&gt;Lorem ipsum dolor sit amet&lt;/p&gt;
+&lt;/div&gt;&lt;!-- END OF VISIBLE DETAILS --&gt;
+
+</pre>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<h4>
+	04 Showbiz Navigation</h4>
+<p>
+	The Navigation of the Showbiz elements can work different art and way. You can use predefined &quot;Arrow Buttons&quot;, you can use you self styled buttons and links, you can use drag &amp; scroll functions and Swipes.</p>
+<p>
+	The Navigation Container (predefined via Showbiz) can be positioned anyhwere within the DOM.<br>
+	The <strong>Buttons need to have</strong> an Individuel <strong>ID</strong> so Showbiz container can <strong>reference </strong>on those buttons.</p>
+<p>
+	&nbsp;</p>
+<pre class="brush: html">
+&lt;!-- THE NAVIGATION --&gt;
+&lt;div class=&quot;showbiz-navigation center sb-nav-grey&quot;&gt;
+    &lt;div id=&quot;showbiz_left_1&quot; class=&quot;sb-navigation-left&quot;&gt;
+            &lt;i class=&quot;icon-left-open&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+
+    &lt;div id=&quot;showbiz_right_1&quot; class=&quot;sb-navigation-right&quot;&gt;
+           &lt;i class=&quot;icon-right-open&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;sbclear&quot;&gt;&lt;/div&gt;
+&lt;/div&gt; &lt;!-- END OF THE NAVIGATION --&gt;
+
+</pre>
+<p>
+	&nbsp;</p>
+<p>
+	The Predefined Navigation can have following Classes:</p>
+<ul>
+	<li>
+		sb-nav-light</li>
+	<li>
+		sb-nav-grey</li>
+	<li>
+		sb-nav-dark</li>
+	<li>
+		any custom created class</li>
+</ul>
+<p>
+	To make a referenz between a Navigation Button and between a Showbiz Teaser you will need to defined the id of the buttons within the data-left and data-right variables at the showbiz container. like this:</p>
+<pre class="brush: html">
+
+&lt;div class=&quot;showbiz&quot; <strong>data-left=&quot;#showbiz_left_1&quot; data-right=&quot;#showbiz_right_1</strong>&quot;&gt;
+
+</pre>
+<p>
+	&nbsp;</p>
+<p>
+	<strong>05 Reveal Containers</strong></p>
+<p>
+	Reveal Containers are there for presenting Hidden content per teaser. A Reveal Container can have a single width or fullwidth. Single width is default. Within a Reveal container you can define any art of content. &nbsp;Reveal Containers handled via jQuery and the Reveal Opener. &nbsp;Reveal Opener are the buttons to open/close the reveal wrapper hidden containers. &nbsp;Please see following examples:</p>
+<p>
+	Single Width Reveal:</p>
+<p>
+	&nbsp;</p>
+<pre class="brush: html">
+&lt;!-- REVEAL CONTAINER (SINGLE MODE) --&gt;
+&lt;div class=&quot;reveal_container&quot;&gt;
+
+    &lt;!-- THE REVEAL CONTENT, ONLY IN DETAIL MODE VISIBLE --&gt;
+    &lt;div class=&quot;reveal_wrapper&quot;&gt;
+         &lt;p class=&quot;p40&quot;&gt;Lorem ipsum dolor sit amet, consetetur sadipscing elitr&lt;/p&gt;
+     &lt;/div&gt;
+
+&lt;/div&gt;&lt;!-- END OF REVEAL CONTAINER --&gt;
+
+</pre>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	Fullwidth Reveal:</p>
+<p>
+	&nbsp;</p>
+<pre class="brush: html">
+&lt;!-- THE REVEAL CONTAINER - OPENING IN FULLWIDTH --&gt;
+&lt;div class=&quot;reveal_container tofullwidth&quot;&gt;
+
+     &lt;!-- THE REVEL HIDDEN / VISIBLE CONTAINER --&gt;
+     &lt;div class=&quot;reveal_wrapper&quot;&gt;
+
+        &lt;!-- THE HEIGHT ADJUSTER CONTAINER --&gt;
+        &lt;div class=&quot;heightadjuster table&quot;&gt;
+
+            &lt;!-- TABLE CONSTRUCT FOR LEFT / RIGHT CONTENTS --&gt;
+            &lt;div class=&quot;table-cell onethird&quot;&gt;
+               &lt;img alt=&quot;&quot; src=&quot;images/entries/Fotolia_261640_XS.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;/div&gt;
+
+            &lt;!-- CONTENT IN TABLE --&gt;
+            &lt;div class=&quot;table-cell pl20&quot;&gt;
+                &lt;h3 class=&quot;showbiz-title large&quot;&gt;Ut wisi enim ad minim veniam&lt;/h3&gt;
+                &lt;div class=&quot;divide20&quot;&gt;&lt;/div&gt;
+                &lt;p&gt;Lorem ipsum dolor sit amet, consetetur sadipscing elitr,&lt;/p&gt;
+                &lt;div class=&quot;divide20&quot;&gt;&lt;/div&gt;
+                &lt;p class=&quot;orange bigger bolder&quot;&gt;Special Offer:&lt;/p&gt;
+            &lt;/div&gt;&lt;!-- END OF CONTENT  --&gt;
+       &lt;/div&gt;&lt;!-- END OF HEIGHT ADJUSTER CONTAINER --&gt;
+    &lt;/div&gt;&lt;!-- END OF REVEAL HIDDEN/VISIBLE CONTAINER --&gt;
+
+
+     &lt;!-- THE CLOSER / OPENER FUNCTION --&gt;
+     &lt;div class=&quot;reveal_opener opener_big_grey&quot;&gt;
+           &lt;span class=&quot;openme&quot;&gt;+&lt;/span&gt;
+           &lt;span class=&quot;closeme&quot;&gt;-&lt;/span&gt;
+     &lt;/div&gt;&lt;!-- END OF CLOSER / OPENER --&gt;
+
+&lt;/div&gt;&lt;!-- END OF THE REVEAL CONTAINER --&gt;</pre>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<h4>
+	06. Reveal Opener</h4>
+<p>
+	This is the Handler To Open and Close the Reveal Wrapper. Some prepared Classes are defined. The Reveal Opener can be positioned within the reveal_container or outside . It need to stay within the &lt;li&gt; tag, and in Fullwidth mode it is important that it stays insidethe reveal_container (see Example Reveal Fullwdith above)</p>
+<p>
+	&nbsp;</p>
+<pre class="brush: html">
+
+&lt;!-- THE CLOSER / OPENER FUNCTION --&gt;
+&lt;div class=&quot;reveal_opener opener_big_grey&quot;&gt;
+    &lt;span class=&quot;openme&quot;&gt;+&lt;/span&gt;
+   &lt;span class=&quot;closeme&quot;&gt;-&lt;/span&gt;
+&lt;/div&gt;&lt;!-- END OF CLOSER / OPENER --&gt;
+
+</pre>
+<p>
+	The Prepared Classes for the Reveal opener:</p>
+<ul>
+	<li>
+		Default</li>
+	<li>
+		opener_big_grey</li>
+	<li>
+		opener_small_grey</li>
+	<li>
+		opener_small_white</li>
+	<li>
+		sb-controll-button</li>
+</ul>
+<p>
+	&nbsp;</p>
+<h4>
+	07. Vimeo &amp; YouTube Markup on Demand</h4>
+<p>
+	Some Video Containers from YouTube and Vimeo Containers can be defined within the reveal_wrapper Makrups to embed video iframes on demand. iFrmaes exist only when reveal wrapper is opened.<br>
+	Set &nbsp;the option closeOtherOverlays:&quot;on&quot; &nbsp;to close one reveal when other reveal has been opened.</p>
+<p>
+	&nbsp;</p>
+<pre class="brush: html">
+&lt;!-- REVEAL CONTAINER (SINGLE MODE) --&gt;
+&lt;div class=&quot;reveal_container&quot;&gt;
+     &lt;!-- THE REVEAL CONTENT, ONLY IN DETAIL MODE VISIBLE --&gt;
+     &lt;div class=&quot;reveal_wrapper&quot;&gt;
+
+      &lt;!-- THE YOUTUBE OR VIMEO HELPER CLASS  --&gt;
+      &lt;div class=&quot;sb-yt-markup&quot; data-videoid=&quot;3v-w8Cyfoq8&quot;&gt;&lt;/div&gt;
+
+     &lt;/div&gt;
+
+&lt;/div&gt;&lt;!-- END OF REVEAL CONTAINER --&gt;</pre>
+<p>
+	&nbsp;</p>
+</section>
+<section id="classes_overview">
+	<h3>Classes Overview</h3><hr class="notop">
+<p>
+	This Chapter presents the Helper Classes</p>
+<p>
+	Some Helper Classes has been pre created for making your life simple at positioning, hide, centering, and styling different containers within the showbiz.</p>
+<p class="info">
+	helper classes are there to help you styling but also to add extra functions of Containers</p>
+<p class="info">
+	Soem function can not work without helper classes. Please see the following List to understand where to use which class</p>
+<h4>
+	00 The Helper Classes</h4>
+<p>
+	In the Following section we list the different classes and the subclasses. We dont relist Skins and Containers here ! Please see prepared Containers and Prepared Skins above !!</p>
+<ul>
+	<li>
+		<strong>sb-navigation-left</strong>, <strong>sb-navigation right</strong>&nbsp; &nbsp;<br>
+		A Simple Button Styling Class for Navigation</li>
+	<li>
+		<strong>icon-left-open, icon-right-open</strong>&nbsp;<br>
+		Simple &lt; &amp; &gt; Icons within the &nbsp;Navigation Buttons</li>
+	<li>
+		<strong>hovercover </strong><br>
+		Colored BG, only Visible on Hover of the &lt;li&gt; tag. Color set via RGBA. On IE8 you can use the data-maxopacity data value between 0.. and 1.00 to set maximal Opacity values here</li>
+	<li>
+		<strong>linkicon, lupeicon, notalone&nbsp;</strong><br>
+		Predefined Animation containers centered vertically and horizontally within the hovercover. You can use any icon within the icon holders. They are animated via CSS dealyed and eased. See settings.css file.<br>
+		notalone aligns two container next to each other. Need to be added in case more than one hover icon holder has been defined</li>
+	<li>
+		<strong>go-to-top</strong><br>
+		Animates an Absolute positioned Caption from the bottom to the top left corner within the &lt;li&gt; in case the Reveal Opener has been clicked. Other effects can be added based on this example</li>
+	<li>
+		<strong>reveal_wrapper</strong><br>
+		Content within this Contaier is hidden till reveal_opener in same &lt;li&gt; has been clicked. It can be in Full width and in Solo Width &nbsp;depending on the next helper class-&gt;</li>
+	<li>
+		<strong>tofullwidth</strong><br>
+		It allows the reveal_wrapper to open in fullwidth method. this helper class must be defined in the same level as the reveal_container has been defined .&gt;&nbsp;&lt;div class=&quot;reveal_container tofullwidth&quot;&gt;</li>
+	<li>
+		<strong>heightadjuster</strong><br>
+		within the reveal_wrapper a class which helps to always resize the height of the reveal_wrapper container depending on the Content. It works only under a <strong>tofullwidth </strong>class !</li>
+	<li>
+		<strong>table,table-cell</strong><br>
+		Some Table Formatting within the reveal_wrapper. it allows you to create table-cells floated which under a limited screen width just breaks down to fullwidth.</li>
+	<li>
+		<strong>show_on_hover</strong><br>
+		This Class helps you to hide and show any art of containers / markups within an &lt;li&gt;. Hover on &lt;li&gt; will show the content of this markup.</li>
+	<li>
+		<strong>icon-play, icon-cancel, icon-link, icon-search</strong><br>
+		Icons for reveal_opener and linkicon, lupeicon buttons.</li>
+</ul>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+</section>
+<section id="fancybox">
+	<h3>FancyBox</h3><hr class="notop">
+<p>
+	ShowBiz Pro use Fancybox as Lightbox System for Detail viewing. We use only a basic function of FancyBox, in case you need advanced functions like Thumbnail views, mouse scroll etc. please check out the <a href="http://fancyapps.com/fancybox/">FancyBox documentation</a>.</p>
+<h4>
+	&nbsp;</h4>
+<h4>
+	00 Load FancyBox2 Basics in the Document</h4>
+<p>
+	Put the following Code in the &lt;head&gt; part of your document under the jQuery Library script !!.&nbsp;</p>
+<p>
+	&nbsp;</p>
+<pre class="brush: html">
+ &lt;!-- THE FANYCYBOX ASSETS --&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;showbizpro/fancybox/<strong>jquery.fancybox.css</strong>?v=2.1.3&quot; type=&quot;text/css&quot; media=&quot;screen&quot; /&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;showbizpro/fancybox/<strong>jquery.fancybox.pack.js</strong>?v=2.1.3&quot;&gt;&lt;/script&gt;
+
+&lt;!-- Optionally add helpers - button, thumbnail and/or media ONLY FOR ADVANCED USAGE--&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;showbizpro/fancybox/helpers/<strong>jquery.fancybox-media.js</strong>?v=1.0.5&quot;&gt;&lt;/script&gt;</pre>
+<p>
+	&nbsp;</p>
+<h4>
+	01 Markup for FancyBox Links</h4>
+<p>
+	&nbsp;</p>
+<pre class="brush: html">
+
+&lt;!-- THE HOVER CONTAINER AND THE HOVER ICONS --&gt;
+&lt;div class=&quot;hovercover&quot; &gt;
+
+     &lt;a class=&quot;fancybox&quot; rel=&quot;group&quot; href=&quot;images/entries/shutterstock_76307515.jpg&quot;&gt;
+           &lt;div class=&quot;lupeicon notalone&quot;&gt;&lt;i class=&quot;icon-search&quot;&gt;&lt;/i&gt;&lt;/div&gt;
+     &lt;/a&gt;
+
+&lt;/div&gt;&lt;!-- END OF HOVER CONTIANER --&gt;
+
+</pre>
+<h4 class="brush: plain">
+	&nbsp;</h4>
+<h4 class="brush: plain">
+	02 Initialising the FancyBox</h4>
+<p>
+	Put this Code somewhere behind the MegaFolio Plugin initialisation (within the &lt;scrip&gt; tags):</p>
+<p>
+	&nbsp;</p>
+<pre class="brush: js">
+// THE FANCYBOX PLUGIN INITALISATION
+jQuery(&quot;.fancybox&quot;).fancybox({
+     openEffect  : &#39;none&#39;,
+     closeEffect : &#39;none&#39;,
+     helpers : {
+                 media : {}
+                }
+});</pre>
+<p>
+	&nbsp;</p>
+</section>
+<section id="methodes">
+	<h3>Methodes</h3><hr class="notop">
+<h4>
+	00 Register the Plugin with API</h4>
+<p>
+	The Plugin need to be saved in a variable (we name it here &quot;api&quot;) so we can referenz on it later, just like this:</p>
+<p>
+	&nbsp;</p>
+<pre class="brush: js">
+var <strong>api</strong>=jQuery(&#39;.showbizpro-container&#39;).showbizpro({....});
+</pre>
+<p>
+	Of course you should use the options etc. as written in the Options Chapter.</p>
+<p>
+	Since we registered the Plugin we can call its methodes.</p>
+<h4>
+	&nbsp;</h4>
+<h4>
+	01 Redraw the Showbiz Container&nbsp;</h4>
+<pre class="brush: js">
+api.showbizredraw();</pre>
+<p>
+	It will rearrange the ShowBiz Pro Entries</p>
+</section>
+<section id="licenses">
+	<h3>Licenses</h3><hr class="notop">
+<p>
+	Used Assets</p>
+<ul>
+	<li>
+		Template demo images licensed from <a href="http://us.fotolia.com">Fotolia</a> for preview usage. Please do not attempt to rip the images from the preview!</li>
+	<li>
+		<a href="https://github.com/louisremi/jquery.transition.js/">jQuery Transision Plugin&nbsp;</a></li>
+	<li>
+		<a href="https://github.com/alexanderdickson/waitForImages">WaitForImages jQuery Plugin</a></li>
+	<li>
+		Fancybox MultiDomain License (Only Together with Megafolio !!)</li>
+	<li>
+		FitVid jQuery Plugin</li>
+</ul>
+<p>
+	&nbsp;</p>
+</section>
+<section id="support">
+	<h3>Support</h3><hr class="notop">
+<p>
+	If you face problems with the installation or customization of our product please do not hesitate to contact us via our support ticket system:</p>
+<p>
+	<strong><a href="http://themepunch.ticksy.com">http://themepunch.ticksy.com</a></strong></p>
+</section>
+
+	</div>
+</body>
+</html>
